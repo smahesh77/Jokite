@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Jokite.Models;
 
 namespace Jokite.Data
 {
@@ -9,5 +10,6 @@ namespace Jokite.Data
             : base(options)
         {
         }
+        public DbSet<Jokite.Models.Joke>? Joke { get; set; }
     }
 }
